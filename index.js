@@ -48,5 +48,26 @@ dogs.forEach((dog) => {
 })
 
 // counting
+console.count('Wes');
+console.count('Wes');
+console.count('Wes');
+console.count('Wes');
+console.count('Wes');
+console.count('Steve');
+console.count('Wes');
+console.count('Steve');
+console.count('Wes');
+console.count('Wes');
+console.count('Wes');
+console.count('Steve');
 
 // timing
+console.time('fetching data');
+fetch('https://api.github.com/users/amirn003')
+  .then(data => data.json())
+  .then(data => {
+    console.timeEnd('fetching data');
+    console.log(data);
+  });
+
+console.table(dogs);
