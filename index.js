@@ -7,24 +7,45 @@ function makeGreen() {
 }
 
 // Regular
+console.log("Hello");
 
 // Interpolated
+console.log('Hello I am %s string.', 'A');
+console.log(`Hello I am ${19}.`);
 
 // Styled
+console.log('%c Hello I am some great text', 'font-size: 50px; background: red; text-shadow: 10px 10px 0 grey;');
 
 // warning!
+console.warn('OH NOO');
 
 // Error :|
+console.error('Shit!');
 
 // Info
+console.info('Crocodiles eat 3-4 peoples a year!')
 
 // Testing
+const p = document.querySelector('p');
+console.assert(p.classList.contains('ouch'), 'That is wrong!');
 
 // clearing
+console.clear();
 
 // Viewing DOM Elements
+console.log(p);
+console.dir(p);
+console.clear();
 
 // Grouping together
+dogs.forEach((dog) => {
+  //console.group(`${dog.name}`)
+  console.groupCollapsed(`${dog.name}`)
+  console.log(`This is ${dog.name}`);
+  console.log(`He is ${dog.age} years old`)
+  console.log(`He is ${dog.age * 7} dog years old`)
+  console.groupEnd(`${dog.name}`)
+})
 
 // counting
 
